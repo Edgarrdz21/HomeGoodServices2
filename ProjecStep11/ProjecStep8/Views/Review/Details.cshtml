@@ -1,0 +1,18 @@
+﻿@model Review
+
+@Model.Id
+<br />
+
+@Model.Userid
+<br />
+
+@Model.Rating
+<br />
+
+@Model.Comments
+<br />
+
+
+<a asp-action="Edit" class="btn btn-warning" asp-route-id="@Model.Id">Edit Review</a>
+
+

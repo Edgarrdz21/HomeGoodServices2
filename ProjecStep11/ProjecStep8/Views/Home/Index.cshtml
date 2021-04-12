@@ -1,0 +1,84 @@
+﻿
+@{ Layout = null;}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title> Myservices </title>
+
+</head>
+
+<body style="background-color:lavender">
+    <div class="text-center">
+        <h1 class="display-4"><strong> House Good Services</strong></h1>
+
+    </div>
+    <table class="table" style="text-align:center" border="4">
+
+        <tr>
+            <td>Services</td>
+            <td>AddService</td>
+            <td> Search </td>
+            <td> Location</td>
+            <td> Edgar.rodriguez@fakeemail.com</td>
+            <td> Logout</td>
+            <td> ChangePassword</td>
+
+        </tr>
+
+    </table>
+    <br />
+    <div>
+        <h1> <strong> <u> Services </u>  </strong>   </h1>
+        <table class="table" style="text-align:center" border="4">
+            <thead>
+                <tr>
+                    <th> Name</th>
+                    <th>Services</th>
+                    <th>Zip Code</th>
+                    <th>City</th>
+                    <th>State</th>
+
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Maria Torrez  </td>
+                    <td> Tacos </td>
+                    <td> 28542 </td>
+                    <td> Kansas City </td>
+                    <td>Missouri  </td>
+                </tr>
+                <tr>
+                    <td>Marco Andrade  </td>
+                    <td> Mechanic </td>
+                    <td> 28543 </td>
+                    <td> Jacksonville </td>
+                    <td> North Carolina </td>
+                </tr>
+                <tr>
+                    <td>Alaina Romo </td>
+                    <td> Nail Tech</td>
+                    <td>  78520 </td>
+                    <td> Brownsville</td>
+                    <td>  Texas </td>
+                </tr>
+                <tr>
+                    <td>Eddie Cruz  </td>
+                    <td> Roofer </td>
+                    <td> 78984 </td>
+                    <td> Houston </td>
+                    <td>  Texas</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <a asp-action="AddAService"/> Add A Service </a>
+    <br />
+    <a asp-controller="Review" asp-action="AddReview"/>Add a review </a>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+﻿@model ProjecStep8.Models.Addservice
+{ Layout = null;}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width"/>
+    <title>AddAService</title>
+</head>
+
+<body style="background-color:lavender">
+    <div class="text-center">
+        <h1 class="display-4"><strong> House Good Services</strong></h1>
+
+    </div>
+    <table class="table" style="text-align:center" border="4">
+
+        <tr>
+            <td>Services</td>
+            <td>AddService</td>
+            <td> Search </td>
+            <td> Location</td>
+            <td> Edgar.rodriguez@fakeemail.com</td>
+            <td> Logout</td>
+            <td> ChangePassword</td>
+
+        </tr>
+
+    </table>
+    <br />
+    <form asp-action="Addservice" method="post">
+        <div>
+            <label asp-for="Name"> Name:</label>
+            <input asp-for="Name" placeholder="Your Name" />
+
+        </div>
+        <div>
+            <label asp-for="Address">Address: </label>
+            <input asp-for="Address" placeholder="Your Email" />
+
+        </div>
+        <div>
+            <label asp-for="City">City: </label>
+            <input asp-for="City" placeholder="Your City" />
+        </div>
+        <div>
+            <label asp-for="State">State: </label>
+            <input asp-for="State" placeholder="Your State" />
+        </div>
+        <div>
+            <label asp-for="ZipCode"> ZipCode </label>
+            <input asp-for="ZipCode" placeholder="Your Zipcode"/>
+        </div>
+        <div>
+            <label asp-for="Service">Service: </label>
+            <input asp-for="Service" placeholder="Your Service" />
+        </div>
+        <button type="submit"> Save New Service</button>
+    </form>
+
+</body>
+</html>
